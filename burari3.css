@@ -1,0 +1,1043 @@
+@import 'https://cdn.jsdelivr.net/normalize/6.0.0/normalize.css';
+@import 'https://cdn.jsdelivr.net/font-notosans-kr/1.0.0-v1004/NotoSansKR-2350.css';
+html, body {
+  width: 100%;
+  height: 100%; }
+
+*::-moz-selection {
+  color: white;
+  background: rgba(0, 122, 255, 0.5); }
+
+*::selection {
+  color: white;
+  background: rgba(0, 122, 255, 0.5); }
+
+* {
+  font-family: 'NotoSansKR', malgun gothic, AppleGothicNeoSD, dotum, sans-serif !important; }
+
+*:focus {
+  outline: none !important; }
+
+h1 {
+  font-size: 42px;
+  line-height: 51px; }
+
+h2 {
+  font-size: 26px;
+  line-height: 35px; }
+
+h3 {
+  font-size: 20px;
+  line-height: 29px; }
+
+h4 {
+  font-size: 16px;
+  line-height: 25px; }
+
+h5 {
+  font-size: 13px;
+  line-height: 22px; }
+
+p, div {
+  font-size: 16px;
+  line-height: 25px; }
+
+a {
+  -webkit-transition: color ease-in .2s,border-color ease-in .2s, background ease-in .2s;
+  transition: color ease-in .2s,border-color ease-in .2s, background ease-in .2s;
+  text-decoration: none !important; }
+  a:link {
+    color: #007AFF; }
+  a:visited {
+    color: #32acff; }
+  a:active {
+    color: #64deff; }
+  a:hover {
+    color: #0048cd; }
+
+span {
+  -webkit-transition: color ease-in .2s;
+  transition: color ease-in .2s; }
+
+body {
+  background: #222; }
+  body div#mypiHead {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    background: rgba(255, 255, 255, 0.7);
+    z-index: 100;
+    font-weight: 200;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px); }
+    body div#mypiHead div#mypiGnb {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center; }
+    body div#mypiHead p.logo {
+      position: relative;
+      top: 0;
+      padding-top: 2px; }
+    body div#mypiHead ul.menu {
+      margin: 0;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      position: relative;
+      top: 0;
+      left: 0; }
+      body div#mypiHead ul.menu li {
+        background: none;
+        float: none; }
+        body div#mypiHead ul.menu li a {
+          line-height: 16px;
+          font-weight: 300;
+          background: none; }
+          body div#mypiHead ul.menu li a:hover {
+            color: #007AFF; }
+    body div#mypiHead p.mymypi {
+      position: relative;
+      top: 0;
+      left: 0;
+      padding-top: 2px; }
+      body div#mypiHead p.mymypi a {
+        font-weight: 100;
+        color: #000; }
+        body div#mypiHead p.mymypi a:hover {
+          color: #007AFF; }
+  body div#mypiTop {
+    background: #222;
+    overflow: hidden;
+    width: 76.8vw;
+    height: 61.8vh;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    border: none;
+    z-index: 10; }
+    body div#mypiTop #video-background {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: auto;
+      height: auto;
+      max-height: 150%;
+      max-width: 150%; }
+  body table#mypiWrap {
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+    body table#mypiWrap tbody tr {
+      display: -ms-grid;
+      display: grid;
+      -ms-grid-columns: 76.8vw 23.2vw;
+          grid-template-columns: 76.8vw 23.2vw;
+      -ms-grid-rows: auto auto;
+          grid-template-rows: auto auto;
+      grid-template-areas: "article sidebar1" "article sidebar";
+      grid-auto-flow: column; }
+    body table#mypiWrap td#mLeft {
+      background-image: -webkit-linear-gradient(left, #4d4fa6, #9e69b3);
+      background-image: linear-gradient(left, #4d4fa6, #9e69b3);
+      grid-area: sidebar1;
+      width: auto;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      color: #fff;
+      padding: 48px 0px 0px 32px;
+      font-weight: 200;
+      height: 100%; }
+      body table#mypiWrap td#mLeft a {
+        margin: 4px 0;
+        color: #fff;
+        mix-blend-mode: normal;
+        -webkit-transition: mix-blend-mode ease-in .2s;
+        transition: mix-blend-mode ease-in .2s; }
+        body table#mypiWrap td#mLeft a:hover {
+          mix-blend-mode: overlay; }
+      body table#mypiWrap td#mLeft div.mypiEdit {
+        background: none;
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        border-left: none;
+        border-right: none;
+        font-size: 12px;
+        text-align: left;
+        color: #777;
+        padding: 8px 0;
+        mix-blend-mode: overlay; }
+        body table#mypiWrap td#mLeft div.mypiEdit a:hover {
+          mix-blend-mode: normal; }
+      body table#mypiWrap td#mLeft h3, body table#mypiWrap td#mLeft h4 {
+        font-weight: 100;
+        border: none;
+        text-transform: uppercase;
+        letter-spacing: -1px !important;
+        margin-bottom: 8px; }
+      body table#mypiWrap td#mLeft div.mypiMenu01 a {
+        margin: 0; }
+        body table#mypiWrap td#mLeft div.mypiMenu01 a:hover b {
+          color: #fff; }
+      body table#mypiWrap td#mLeft div.mypiMenu01 b {
+        color: #fff; }
+      body table#mypiWrap td#mLeft div.mypiMenu02 a {
+        background: none;
+        margin: 0; }
+      body table#mypiWrap td#mLeft div.mypiFind input.search {
+        background: none;
+        border: none;
+        border-bottom: 1px solid white;
+        -webkit-transition: border-color ease-in .2s;
+        transition: border-color ease-in .2s;
+        color: #fff;
+        mix-blend-mode: overlay; }
+        body table#mypiWrap td#mLeft div.mypiFind input.search:focus {
+          border-color: #fff;
+          mix-blend-mode: normal; }
+      body table#mypiWrap td#mLeft div.mypiFind input.btn {
+        border: 1px solid #fff;
+        background: none;
+        color: white;
+        border-radius: 16px;
+        padding: 0px 8px 0px 8px;
+        width: auto;
+        cursor: pointer;
+        mix-blend-mode: normal; }
+        body table#mypiWrap td#mLeft div.mypiFind input.btn:hover {
+          color: #fff !important;
+          border-color: #fff !important;
+          mix-blend-mode: overlay; }
+      body table#mypiWrap td#mLeft ul.mypiEtc {
+        font-size: 12px; }
+        body table#mypiWrap td#mLeft ul.mypiEtc:after {
+          content: "Designed by Estoque";
+          color: #fff;
+          font-weight: 100;
+          font-size: 8px;
+          padding: 32px 0;
+          display: block;
+          text-transform: uppercase;
+          letter-spacing: 5px; }
+    body table#mypiWrap td#mRight {
+      background-image: -webkit-linear-gradient(left, #4d4fa6, #9e69b3);
+      background-image: linear-gradient(left, #4d4fa6, #9e69b3);
+      grid-area: sidebar;
+      width: auto;
+      position: relative;
+      padding-left: 32px;
+      padding-right: 64px;
+      z-index: 0; }
+      body table#mypiWrap td#mRight div.rightfly {
+        margin: 0;
+        padding: 0;
+        display: block;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        font-weight: 200; }
+        body table#mypiWrap td#mRight div.rightfly a {
+          color: #fff;
+          mix-blend-mode: normal;
+          -webkit-transition: mix-blend-mode ease-in .2s;
+          transition: mix-blend-mode ease-in .2s; }
+          body table#mypiWrap td#mRight div.rightfly a:hover {
+            color: #fff !important;
+            mix-blend-mode: overlay; }
+        body table#mypiWrap td#mRight div.rightfly ul.mypiSideUl {
+          height: auto;
+          border: none;
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: justify;
+          -webkit-justify-content: space-between;
+              -ms-flex-pack: justify;
+                  justify-content: space-between;
+          margin-bottom: 16px; }
+          body table#mypiWrap td#mRight div.rightfly ul.mypiSideUl li {
+            float: none; }
+          body table#mypiWrap td#mRight div.rightfly ul.mypiSideUl li.f_l {
+            font-weight: 100;
+            font-size: 22px; }
+          body table#mypiWrap td#mRight div.rightfly ul.mypiSideUl li.f_r {
+            font-weight: 400;
+            font-size: 12px;
+            border: 1px solid #fff;
+            padding: 0px 8px 0px 8px;
+            border-radius: 16px;
+            mix-blend-mode: normal; }
+            body table#mypiWrap td#mRight div.rightfly ul.mypiSideUl li.f_r:hover {
+              mix-blend-mode: overlay;
+              border-color: #fff !important; }
+          body table#mypiWrap td#mRight div.rightfly ul.mypiSideUl a.mypi2 {
+            display: none; }
+        body table#mypiWrap td#mRight div.rightfly ul.mypiSide li {
+          margin-bottom: 4px; }
+    body table#mypiWrap td#mCenter {
+      background: white;
+      grid-area: article;
+      padding-top: 61.8vh;
+      box-shadow: 0px 20px 75px 5px #000;
+      z-index: 2; }
+      body table#mypiWrap td#mCenter div.visit {
+        width: 100%;
+        height: auto;
+        border: none; }
+        body table#mypiWrap td#mCenter div.visit p.vcom {
+          font-weight: 100;
+          font-size: 24px;
+          background: none;
+          padding: 16px 32px;
+          padding-top: 32px; }
+        body table#mypiWrap td#mCenter div.visit form {
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+          padding: 16px 32px; }
+          body table#mypiWrap td#mCenter div.visit form textarea {
+            border-radius: 8px;
+            border: 1px solid #ddd;
+            font: inherit !important;
+            width: 90%;
+            -webkit-transition: border-color ease-in .2s;
+            transition: border-color ease-in .2s; }
+            body table#mypiWrap td#mCenter div.visit form textarea:focus {
+              border-color: #007AFF; }
+          body table#mypiWrap td#mCenter div.visit form p.visitxt2 {
+            font-size: 12px;
+            color: #ddd;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -webkit-flex-direction: column;
+                -ms-flex-direction: column;
+                    flex-direction: column;
+            width: auto;
+            display: inline; }
+            body table#mypiWrap td#mCenter div.visit form p.visitxt2 br {
+              display: none; }
+            body table#mypiWrap td#mCenter div.visit form p.visitxt2 input[type='image'] {
+              background-attachment: scroll;
+              background-clip: border-box;
+              background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgNTAgNTAiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUwIDUwOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQo8Y2lyY2xlIHN0eWxlPSJmaWxsOiMyNUFFODg7IiBjeD0iMjUiIGN5PSIyNSIgcj0iMjUiLz4NCjxwb2x5bGluZSBzdHlsZT0iZmlsbDpub25lO3N0cm9rZTojRkZGRkZGO3N0cm9rZS13aWR0aDoyO3N0cm9rZS1saW5lY2FwOnJvdW5kO3N0cm9rZS1saW5lam9pbjpyb3VuZDtzdHJva2UtbWl0ZXJsaW1pdDoxMDsiIHBvaW50cz0iDQoJMzgsMTUgMjIsMzMgMTIsMjUgIi8+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8L3N2Zz4NCg==) !important;
+              background-origin: padding-box;
+              background-position: 50% 50%;
+              background-repeat: no-repeat;
+              background-size: auto;
+              box-sizing: border-box;
+              color: white;
+              cursor: pointer;
+              display: block;
+              height: 50px;
+              overflow-x: hidden;
+              overflow-y: hidden;
+              padding-bottom: 0px;
+              padding-left: 50px;
+              padding-right: 0px;
+              padding-top: 1px;
+              right: 5px;
+              text-align: center;
+              text-decoration: none;
+              text-indent: -119988px;
+              vertical-align: middle;
+              width: 50px;
+              -webkit-transition: -webkit-filter ease-in .2s;
+              transition: -webkit-filter ease-in .2s;
+              transition: filter ease-in .2s;
+              transition: filter ease-in .2s, -webkit-filter ease-in .2s;
+              margin-bottom: 10px;
+              -webkit-filter: grayscale(1);
+                      filter: grayscale(1); }
+              body table#mypiWrap td#mCenter div.visit form p.visitxt2 input[type='image']:hover {
+                -webkit-filter: grayscale(0);
+                        filter: grayscale(0); }
+            body table#mypiWrap td#mCenter div.visit form p.visitxt2 input {
+              margin-left: 4px; }
+      body table#mypiWrap td#mCenter div.cl_b {
+        display: none; }
+      body table#mypiWrap td#mCenter div.visitxt4 {
+        box-sizing: border-box;
+        background: none;
+        border: none;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        padding: 8px 32px !important;
+        padding-top: 16px;
+        float: none;
+        margin: auto;
+        width: 100%; }
+        body table#mypiWrap td#mCenter div.visitxt4 p.f_l {
+          float: none;
+          text-align: left;
+          padding: 0 !important;
+          font-weight: 300; }
+        body table#mypiWrap td#mCenter div.visitxt4 form {
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+          width: 100%;
+          height: auto;
+          -webkit-box-orient: horizontal;
+          -webkit-box-direction: normal;
+          -webkit-flex-direction: row;
+              -ms-flex-direction: row;
+                  flex-direction: row;
+          -webkit-box-pack: center;
+          -webkit-justify-content: center;
+              -ms-flex-pack: center;
+                  justify-content: center;
+          -webkit-box-align: center;
+          -webkit-align-items: center;
+              -ms-flex-align: center;
+                  align-items: center;
+          position: relative;
+          box-sizing: border-box;
+          padding-bottom: 16px; }
+          body table#mypiWrap td#mCenter div.visitxt4 form textarea {
+            border-radius: 8px;
+            border: 1px solid #ddd;
+            font: inherit !important;
+            width: 90%;
+            -webkit-transition: border-color ease-in .2s;
+            transition: border-color ease-in .2s;
+            float: none;
+            box-sizing: border-box; }
+            body table#mypiWrap td#mCenter div.visitxt4 form textarea:focus {
+              border-color: #007AFF; }
+          body table#mypiWrap td#mCenter div.visitxt4 form p.visitxt2 {
+            float: none;
+            font-size: 12px;
+            color: #ddd;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -webkit-flex-direction: column;
+                -ms-flex-direction: column;
+                    flex-direction: column;
+            width: auto;
+            display: inline;
+            padding: 0px !important;
+            width: auto;
+            height: auto;
+            display: block;
+            position: relative;
+            width: 50px;
+            height: 50px; }
+            body table#mypiWrap td#mCenter div.visitxt4 form p.visitxt2 br {
+              display: none; }
+            body table#mypiWrap td#mCenter div.visitxt4 form p.visitxt2 input[type='image'] {
+              background-attachment: scroll;
+              background-clip: border-box;
+              background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgNTAgNTAiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUwIDUwOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQo8Y2lyY2xlIHN0eWxlPSJmaWxsOiMyNUFFODg7IiBjeD0iMjUiIGN5PSIyNSIgcj0iMjUiLz4NCjxwb2x5bGluZSBzdHlsZT0iZmlsbDpub25lO3N0cm9rZTojRkZGRkZGO3N0cm9rZS13aWR0aDoyO3N0cm9rZS1saW5lY2FwOnJvdW5kO3N0cm9rZS1saW5lam9pbjpyb3VuZDtzdHJva2UtbWl0ZXJsaW1pdDoxMDsiIHBvaW50cz0iDQoJMzgsMTUgMjIsMzMgMTIsMjUgIi8+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8L3N2Zz4NCg==) !important;
+              background-origin: padding-box;
+              background-position: 50% 50%;
+              background-repeat: no-repeat;
+              background-size: auto;
+              box-sizing: border-box;
+              color: white;
+              cursor: pointer;
+              display: block;
+              height: 50px;
+              overflow-x: hidden;
+              overflow-y: hidden;
+              padding-bottom: 0px;
+              padding-left: 50px;
+              padding-right: 0px;
+              padding-top: 1px;
+              right: 5px;
+              text-align: center;
+              text-decoration: none;
+              text-indent: -119988px;
+              vertical-align: middle;
+              width: 50px;
+              -webkit-transition: -webkit-filter ease-in .2s;
+              transition: -webkit-filter ease-in .2s;
+              transition: filter ease-in .2s;
+              transition: filter ease-in .2s, -webkit-filter ease-in .2s;
+              margin-bottom: 10px;
+              -webkit-filter: grayscale(1);
+                      filter: grayscale(1); }
+              body table#mypiWrap td#mCenter div.visitxt4 form p.visitxt2 input[type='image']:hover {
+                -webkit-filter: grayscale(0);
+                        filter: grayscale(0); }
+            body table#mypiWrap td#mCenter div.visitxt4 form p.visitxt2 input {
+              margin-left: 12px; }
+      body table#mypiWrap td#mCenter div.visitxt3[style] {
+        padding-left: 64px; }
+      body table#mypiWrap td#mCenter div.visitxt3 {
+        box-sizing: border-box;
+        background: none;
+        border: none;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        padding: 8px 32px;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        border-top: 1px solid #f7f7f7;
+        float: none;
+        margin: auto;
+        width: 100%; }
+        body table#mypiWrap td#mCenter div.visitxt3 p.f_l {
+          float: none;
+          font-weight: 100;
+          font-size: 12px;
+          color: #ddd; }
+          body table#mypiWrap td#mCenter div.visitxt3 p.f_l b {
+            font-weight: 600;
+            font-size: 16px;
+            color: #000; }
+        body table#mypiWrap td#mCenter div.visitxt3 p.f_r {
+          float: none;
+          font-weight: 200;
+          font-size: 12px;
+          color: #ddd; }
+          body table#mypiWrap td#mCenter div.visitxt3 p.f_r a {
+            color: #ddd; }
+            body table#mypiWrap td#mCenter div.visitxt3 p.f_r a:hover {
+              color: #007AFF; }
+        body table#mypiWrap td#mCenter div.visitxt3 div.mypiZmenu, body table#mypiWrap td#mCenter div.visitxt3 div.mypiZmenu2 {
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: justify;
+          -webkit-justify-content: space-between;
+              -ms-flex-pack: justify;
+                  justify-content: space-between;
+          padding: 0;
+          padding-top: 16px;
+          margin: 8px 32px;
+          border-top: 1px solid #f7f7f7; }
+          body table#mypiWrap td#mCenter div.visitxt3 div.mypiZmenu p.cm01, body table#mypiWrap td#mCenter div.visitxt3 div.mypiZmenu2 p.cm01 {
+            float: none;
+            font-weight: 200; }
+            body table#mypiWrap td#mCenter div.visitxt3 div.mypiZmenu p.cm01 b, body table#mypiWrap td#mCenter div.visitxt3 div.mypiZmenu2 p.cm01 b {
+              cursor: auto; }
+            body table#mypiWrap td#mCenter div.visitxt3 div.mypiZmenu p.cm01 a, body table#mypiWrap td#mCenter div.visitxt3 div.mypiZmenu2 p.cm01 a {
+              color: #ddd; }
+              body table#mypiWrap td#mCenter div.visitxt3 div.mypiZmenu p.cm01 a:hover, body table#mypiWrap td#mCenter div.visitxt3 div.mypiZmenu2 p.cm01 a:hover {
+                color: #007AFF; }
+                body table#mypiWrap td#mCenter div.visitxt3 div.mypiZmenu p.cm01 a:hover:before, body table#mypiWrap td#mCenter div.visitxt3 div.mypiZmenu2 p.cm01 a:hover:before {
+                  border-color: #007AFF; }
+              body table#mypiWrap td#mCenter div.visitxt3 div.mypiZmenu p.cm01 a:before, body table#mypiWrap td#mCenter div.visitxt3 div.mypiZmenu2 p.cm01 a:before {
+                content: "Mypi";
+                margin-left: 16px;
+                text-transform: uppercase;
+                font-weight: 900;
+                font-size: 12px;
+                border: 2px solid #ddd;
+                padding: 0px 8px 0px 8px;
+                border-radius: 16px;
+                -webkit-transition: border-color ease-in .2s;
+                transition: border-color ease-in .2s; }
+              body table#mypiWrap td#mCenter div.visitxt3 div.mypiZmenu p.cm01 a img, body table#mypiWrap td#mCenter div.visitxt3 div.mypiZmenu2 p.cm01 a img {
+                display: none; }
+            body table#mypiWrap td#mCenter div.visitxt3 div.mypiZmenu p.cm01 a[onclick], body table#mypiWrap td#mCenter div.visitxt3 div.mypiZmenu2 p.cm01 a[onclick] {
+              font-weight: 900 !important;
+              font-size: 12px !important;
+              border: 2px solid #ddd !important;
+              padding: 0px 8px 0px 8px !important;
+              border-radius: 16px !important; }
+              body table#mypiWrap td#mCenter div.visitxt3 div.mypiZmenu p.cm01 a[onclick]:hover, body table#mypiWrap td#mCenter div.visitxt3 div.mypiZmenu2 p.cm01 a[onclick]:hover {
+                border-color: #007AFF !important; }
+              body table#mypiWrap td#mCenter div.visitxt3 div.mypiZmenu p.cm01 a[onclick]:before, body table#mypiWrap td#mCenter div.visitxt3 div.mypiZmenu2 p.cm01 a[onclick]:before {
+                display: none !important; }
+          body table#mypiWrap td#mCenter div.visitxt3 div.mypiZmenu ul.cm02, body table#mypiWrap td#mCenter div.visitxt3 div.mypiZmenu2 ul.cm02 {
+            float: none;
+            font-weight: 100;
+            font-size: 12px;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            color: #ddd; }
+            body table#mypiWrap td#mCenter div.visitxt3 div.mypiZmenu ul.cm02 li, body table#mypiWrap td#mCenter div.visitxt3 div.mypiZmenu2 ul.cm02 li {
+              float: none; }
+              body table#mypiWrap td#mCenter div.visitxt3 div.mypiZmenu ul.cm02 li a, body table#mypiWrap td#mCenter div.visitxt3 div.mypiZmenu2 ul.cm02 li a {
+                font-weight: 400;
+                font-size: 12px;
+                border: 1px solid #ddd;
+                padding: 0px 8px 0px 8px;
+                border-radius: 16px;
+                color: #ddd; }
+                body table#mypiWrap td#mCenter div.visitxt3 div.mypiZmenu ul.cm02 li a:hover, body table#mypiWrap td#mCenter div.visitxt3 div.mypiZmenu2 ul.cm02 li a:hover {
+                  color: #007AFF;
+                  border-color: #007AFF; }
+        body table#mypiWrap td#mCenter div.visitxt3 div.readcomment, body table#mypiWrap td#mCenter div.visitxt3 div.readcomment2 {
+          padding: 0px;
+          margin: 16px 32px;
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          -webkit-flex-direction: column;
+              -ms-flex-direction: column;
+                  flex-direction: column; }
+          body table#mypiWrap td#mCenter div.visitxt3 div.readcomment a, body table#mypiWrap td#mCenter div.visitxt3 div.readcomment2 a {
+            border: 1px solid #ddd;
+            padding: 0px 8px 0px 8px;
+            border-radius: 16px;
+            width: 24px;
+            -webkit-align-self: flex-end;
+                -ms-flex-item-align: end;
+                    align-self: flex-end; }
+            body table#mypiWrap td#mCenter div.visitxt3 div.readcomment a span, body table#mypiWrap td#mCenter div.visitxt3 div.readcomment2 a span {
+              font-weight: 400;
+              font-size: 12px;
+              color: #ddd; }
+              body table#mypiWrap td#mCenter div.visitxt3 div.readcomment a span:hover, body table#mypiWrap td#mCenter div.visitxt3 div.readcomment2 a span:hover {
+                color: #007AFF; }
+            body table#mypiWrap td#mCenter div.visitxt3 div.readcomment a:hover, body table#mypiWrap td#mCenter div.visitxt3 div.readcomment2 a:hover {
+              color: #007AFF;
+              border-color: #007AFF; }
+            body table#mypiWrap td#mCenter div.visitxt3 div.readcomment a img, body table#mypiWrap td#mCenter div.visitxt3 div.readcomment2 a img {
+              display: none; }
+        body table#mypiWrap td#mCenter div.visitxt3 div.mypiZmenu2 {
+          background: none;
+          padding-left: 32px; }
+          body table#mypiWrap td#mCenter div.visitxt3 div.mypiZmenu2 p.cm01 img {
+            display: none; }
+        body table#mypiWrap td#mCenter div.visitxt3 div.readcomment2 {
+          padding-left: 32px;
+          background: none; }
+      body table#mypiWrap td#mCenter div.mypiComment {
+        display: none; }
+      body table#mypiWrap td#mCenter table#mypiRead {
+        border: none;
+        background: none;
+        margin-bottom: 16px;
+        width: 78.6vw; }
+        body table#mypiWrap td#mCenter table#mypiRead tbody {
+          width: 78.6vw; }
+          body table#mypiWrap td#mCenter table#mypiRead tbody tr {
+            width: 78.6vw; }
+        body table#mypiWrap td#mCenter table#mypiRead td.m1 {
+          font: inherit !important;
+          color: #ddd;
+          font-size: 16px;
+          text-align: left;
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          -webkit-flex-direction: column;
+              -ms-flex-direction: column;
+                  flex-direction: column;
+          padding: 16px 32px;
+          border: none;
+          font-weight: 100 !important; }
+          body table#mypiWrap td#mCenter table#mypiRead td.m1 a {
+            font-size: 26px;
+            line-height: 35px;
+            font-weight: 200;
+            color: #000;
+            float: none;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -webkit-flex-direction: column;
+                -ms-flex-direction: column;
+                    flex-direction: column;
+            margin-bottom: 12px; }
+            body table#mypiWrap td#mCenter table#mypiRead td.m1 a:hover {
+              color: #007AFF; }
+            body table#mypiWrap td#mCenter table#mypiRead td.m1 a b {
+              margin-top: 16px;
+              color: #eaeaea;
+              font-size: 12px;
+              line-height: 12px;
+              margin-bottom: 4px;
+              font-weight: 700 !important; }
+        body table#mypiWrap td#mCenter table#mypiRead td.qlink {
+          background: none;
+          border: none;
+          color: #ddd;
+          font-weight: 300;
+          font-size: 12px;
+          padding: 8px 32px 16px 32px; }
+          body table#mypiWrap td#mCenter table#mypiRead td.qlink a {
+            color: #ddd; }
+            body table#mypiWrap td#mCenter table#mypiRead td.qlink a:hover {
+              color: #007AFF; }
+        body table#mypiWrap td#mCenter table#mypiRead p.privacy {
+          background: #cd0000;
+          color: white;
+          padding: 16px; }
+        body table#mypiWrap td#mCenter table#mypiRead div.story {
+          margin: 16px 0;
+          font-weight: 300;
+          color: #000; }
+          body table#mypiWrap td#mCenter table#mypiRead div.story strong, body table#mypiWrap td#mCenter table#mypiRead div.story b {
+            font-weight: bold; }
+          body table#mypiWrap td#mCenter table#mypiRead div.story p {
+            width: 600px;
+            margin: auto;
+            margin-bottom: 8px;
+            color: #000; }
+            body table#mypiWrap td#mCenter table#mypiRead div.story p img {
+              max-width: 100%;
+              max-height: auto;
+              border-radius: 4px; }
+            body table#mypiWrap td#mCenter table#mypiRead div.story p iframe {
+              width: 100%;
+              max-width: 100%;
+              max-height: auto;
+              border-radius: 4px; }
+          body table#mypiWrap td#mCenter table#mypiRead div.story ol, body table#mypiWrap td#mCenter table#mypiRead div.story ul, body table#mypiWrap td#mCenter table#mypiRead div.story hr {
+            margin: auto;
+            width: 600px; }
+        body table#mypiWrap td#mCenter table#mypiRead td.mypiReadMenu p.ico_comm {
+          background-image: none;
+          float: none;
+          text-align: right;
+          color: #ddd;
+          font-weight: 200;
+          font-size: 12px;
+          margin: 0 32px; }
+          body table#mypiWrap td#mCenter table#mypiRead td.mypiReadMenu p.ico_comm a {
+            color: #ddd; }
+            body table#mypiWrap td#mCenter table#mypiRead td.mypiReadMenu p.ico_comm a:hover {
+              color: #007AFF; }
+        body table#mypiWrap td#mCenter table#mypiRead td.mypibanner {
+          display: none; }
+        body table#mypiWrap td#mCenter table#mypiRead td.mypiReply {
+          margin: 16px 0;
+          background: none; }
+          body table#mypiWrap td#mCenter table#mypiRead td.mypiReply div.mypiZmenu, body table#mypiWrap td#mCenter table#mypiRead td.mypiReply div.mypiZmenu2 {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: justify;
+            -webkit-justify-content: space-between;
+                -ms-flex-pack: justify;
+                    justify-content: space-between;
+            padding: 0;
+            padding-top: 16px;
+            margin: 8px 32px;
+            border-top: 1px solid #f7f7f7; }
+            body table#mypiWrap td#mCenter table#mypiRead td.mypiReply div.mypiZmenu p.cm01, body table#mypiWrap td#mCenter table#mypiRead td.mypiReply div.mypiZmenu2 p.cm01 {
+              float: none;
+              font-weight: 200; }
+              body table#mypiWrap td#mCenter table#mypiRead td.mypiReply div.mypiZmenu p.cm01 b, body table#mypiWrap td#mCenter table#mypiRead td.mypiReply div.mypiZmenu2 p.cm01 b {
+                cursor: auto; }
+              body table#mypiWrap td#mCenter table#mypiRead td.mypiReply div.mypiZmenu p.cm01 a, body table#mypiWrap td#mCenter table#mypiRead td.mypiReply div.mypiZmenu2 p.cm01 a {
+                color: #ddd; }
+                body table#mypiWrap td#mCenter table#mypiRead td.mypiReply div.mypiZmenu p.cm01 a:hover, body table#mypiWrap td#mCenter table#mypiRead td.mypiReply div.mypiZmenu2 p.cm01 a:hover {
+                  color: #007AFF; }
+                  body table#mypiWrap td#mCenter table#mypiRead td.mypiReply div.mypiZmenu p.cm01 a:hover:before, body table#mypiWrap td#mCenter table#mypiRead td.mypiReply div.mypiZmenu2 p.cm01 a:hover:before {
+                    border-color: #007AFF; }
+                body table#mypiWrap td#mCenter table#mypiRead td.mypiReply div.mypiZmenu p.cm01 a:before, body table#mypiWrap td#mCenter table#mypiRead td.mypiReply div.mypiZmenu2 p.cm01 a:before {
+                  content: "Mypi";
+                  margin-left: 16px;
+                  text-transform: uppercase;
+                  font-weight: 900;
+                  font-size: 12px;
+                  border: 2px solid #ddd;
+                  padding: 0px 8px 0px 8px;
+                  border-radius: 16px;
+                  -webkit-transition: border-color ease-in .2s;
+                  transition: border-color ease-in .2s; }
+                body table#mypiWrap td#mCenter table#mypiRead td.mypiReply div.mypiZmenu p.cm01 a img, body table#mypiWrap td#mCenter table#mypiRead td.mypiReply div.mypiZmenu2 p.cm01 a img {
+                  display: none; }
+              body table#mypiWrap td#mCenter table#mypiRead td.mypiReply div.mypiZmenu p.cm01 a[onclick], body table#mypiWrap td#mCenter table#mypiRead td.mypiReply div.mypiZmenu2 p.cm01 a[onclick] {
+                font-weight: 900;
+                font-size: 12px;
+                border: 2px solid #ddd;
+                padding: 0px 8px 0px 8px;
+                border-radius: 16px; }
+                body table#mypiWrap td#mCenter table#mypiRead td.mypiReply div.mypiZmenu p.cm01 a[onclick]:hover, body table#mypiWrap td#mCenter table#mypiRead td.mypiReply div.mypiZmenu2 p.cm01 a[onclick]:hover {
+                  border-color: #007AFF; }
+                body table#mypiWrap td#mCenter table#mypiRead td.mypiReply div.mypiZmenu p.cm01 a[onclick]:before, body table#mypiWrap td#mCenter table#mypiRead td.mypiReply div.mypiZmenu2 p.cm01 a[onclick]:before {
+                  display: none; }
+            body table#mypiWrap td#mCenter table#mypiRead td.mypiReply div.mypiZmenu ul.cm02, body table#mypiWrap td#mCenter table#mypiRead td.mypiReply div.mypiZmenu2 ul.cm02 {
+              float: none;
+              font-weight: 100;
+              font-size: 12px;
+              display: -webkit-box;
+              display: -webkit-flex;
+              display: -ms-flexbox;
+              display: flex;
+              color: #ddd; }
+              body table#mypiWrap td#mCenter table#mypiRead td.mypiReply div.mypiZmenu ul.cm02 li, body table#mypiWrap td#mCenter table#mypiRead td.mypiReply div.mypiZmenu2 ul.cm02 li {
+                float: none; }
+                body table#mypiWrap td#mCenter table#mypiRead td.mypiReply div.mypiZmenu ul.cm02 li a, body table#mypiWrap td#mCenter table#mypiRead td.mypiReply div.mypiZmenu2 ul.cm02 li a {
+                  font-weight: 400;
+                  font-size: 12px;
+                  border: 1px solid #ddd;
+                  padding: 0px 8px 0px 8px;
+                  border-radius: 16px;
+                  color: #ddd; }
+                  body table#mypiWrap td#mCenter table#mypiRead td.mypiReply div.mypiZmenu ul.cm02 li a:hover, body table#mypiWrap td#mCenter table#mypiRead td.mypiReply div.mypiZmenu2 ul.cm02 li a:hover {
+                    color: #007AFF;
+                    border-color: #007AFF; }
+          body table#mypiWrap td#mCenter table#mypiRead td.mypiReply div.readcomment, body table#mypiWrap td#mCenter table#mypiRead td.mypiReply div.readcomment2 {
+            padding: 0px;
+            margin: 16px 32px;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -webkit-flex-direction: column;
+                -ms-flex-direction: column;
+                    flex-direction: column; }
+            body table#mypiWrap td#mCenter table#mypiRead td.mypiReply div.readcomment a, body table#mypiWrap td#mCenter table#mypiRead td.mypiReply div.readcomment2 a {
+              border: 1px solid #ddd;
+              padding: 0px 8px 0px 8px;
+              border-radius: 16px;
+              width: 24px;
+              -webkit-align-self: flex-end;
+                  -ms-flex-item-align: end;
+                      align-self: flex-end; }
+              body table#mypiWrap td#mCenter table#mypiRead td.mypiReply div.readcomment a span, body table#mypiWrap td#mCenter table#mypiRead td.mypiReply div.readcomment2 a span {
+                font-weight: 400;
+                font-size: 12px;
+                color: #ddd; }
+                body table#mypiWrap td#mCenter table#mypiRead td.mypiReply div.readcomment a span:hover, body table#mypiWrap td#mCenter table#mypiRead td.mypiReply div.readcomment2 a span:hover {
+                  color: #007AFF; }
+              body table#mypiWrap td#mCenter table#mypiRead td.mypiReply div.readcomment a:hover, body table#mypiWrap td#mCenter table#mypiRead td.mypiReply div.readcomment2 a:hover {
+                color: #007AFF;
+                border-color: #007AFF; }
+              body table#mypiWrap td#mCenter table#mypiRead td.mypiReply div.readcomment a img, body table#mypiWrap td#mCenter table#mypiRead td.mypiReply div.readcomment2 a img {
+                display: none; }
+            body table#mypiWrap td#mCenter table#mypiRead td.mypiReply div.readcomment form, body table#mypiWrap td#mCenter table#mypiRead td.mypiReply div.readcomment2 form {
+              background: none;
+              padding: 0;
+              margin: 16px 32px;
+              border: none;
+              position: relative; }
+              body table#mypiWrap td#mCenter table#mypiRead td.mypiReply div.readcomment form div.box_txt_area textarea, body table#mypiWrap td#mCenter table#mypiRead td.mypiReply div.readcomment2 form div.box_txt_area textarea {
+                border-radius: 8px;
+                border: 1px solid #ddd;
+                font: inherit !important;
+                width: 90% !important;
+                height: 110px !important;
+                -webkit-transition: border-color ease-in .2s;
+                transition: border-color ease-in .2s; }
+                body table#mypiWrap td#mCenter table#mypiRead td.mypiReply div.readcomment form div.box_txt_area textarea:focus, body table#mypiWrap td#mCenter table#mypiRead td.mypiReply div.readcomment2 form div.box_txt_area textarea:focus {
+                  border-color: #007AFF; }
+              body table#mypiWrap td#mCenter table#mypiRead td.mypiReply div.readcomment form div.box_txt_area ul.btn_comm, body table#mypiWrap td#mCenter table#mypiRead td.mypiReply div.readcomment2 form div.box_txt_area ul.btn_comm {
+                font-size: 12px;
+                color: #ddd;
+                display: -webkit-box;
+                display: -webkit-flex;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-orient: vertical;
+                -webkit-box-direction: normal;
+                -webkit-flex-direction: column;
+                    -ms-flex-direction: column;
+                        flex-direction: column; }
+                body table#mypiWrap td#mCenter table#mypiRead td.mypiReply div.readcomment form div.box_txt_area ul.btn_comm input[src*='mpx'], body table#mypiWrap td#mCenter table#mypiRead td.mypiReply div.readcomment2 form div.box_txt_area ul.btn_comm input[src*='mpx'] {
+                  background-attachment: scroll;
+                  background-clip: border-box;
+                  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgNTAgNTAiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUwIDUwOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQo8Y2lyY2xlIHN0eWxlPSJmaWxsOiMyNUFFODg7IiBjeD0iMjUiIGN5PSIyNSIgcj0iMjUiLz4NCjxwb2x5bGluZSBzdHlsZT0iZmlsbDpub25lO3N0cm9rZTojRkZGRkZGO3N0cm9rZS13aWR0aDoyO3N0cm9rZS1saW5lY2FwOnJvdW5kO3N0cm9rZS1saW5lam9pbjpyb3VuZDtzdHJva2UtbWl0ZXJsaW1pdDoxMDsiIHBvaW50cz0iDQoJMzgsMTUgMjIsMzMgMTIsMjUgIi8+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8L3N2Zz4NCg==) !important;
+                  background-origin: padding-box;
+                  background-position: 50% 50%;
+                  background-repeat: no-repeat;
+                  background-size: auto;
+                  box-sizing: border-box;
+                  color: white;
+                  cursor: pointer;
+                  display: block;
+                  height: 50px;
+                  overflow-x: hidden;
+                  overflow-y: hidden;
+                  padding-bottom: 0px;
+                  padding-left: 50px;
+                  padding-right: 0px;
+                  padding-top: 1px;
+                  right: 5px;
+                  text-align: center;
+                  text-decoration: none;
+                  text-indent: -119988px;
+                  vertical-align: middle;
+                  width: 50px;
+                  -webkit-transition: -webkit-filter ease-in .2s;
+                  transition: -webkit-filter ease-in .2s;
+                  transition: filter ease-in .2s;
+                  transition: filter ease-in .2s, -webkit-filter ease-in .2s;
+                  margin-bottom: 10px;
+                  -webkit-filter: grayscale(1);
+                          filter: grayscale(1); }
+                  body table#mypiWrap td#mCenter table#mypiRead td.mypiReply div.readcomment form div.box_txt_area ul.btn_comm input[src*='mpx']:hover, body table#mypiWrap td#mCenter table#mypiRead td.mypiReply div.readcomment2 form div.box_txt_area ul.btn_comm input[src*='mpx']:hover {
+                    -webkit-filter: grayscale(0);
+                            filter: grayscale(0); }
+                body table#mypiWrap td#mCenter table#mypiRead td.mypiReply div.readcomment form div.box_txt_area ul.btn_comm input, body table#mypiWrap td#mCenter table#mypiRead td.mypiReply div.readcomment2 form div.box_txt_area ul.btn_comm input {
+                  margin-left: 4px; }
+          body table#mypiWrap td#mCenter table#mypiRead td.mypiReply div.mypiZmenu2 {
+            background: none;
+            padding-left: 32px; }
+            body table#mypiWrap td#mCenter table#mypiRead td.mypiReply div.mypiZmenu2 p.cm01 img {
+              display: none; }
+          body table#mypiWrap td#mCenter table#mypiRead td.mypiReply div.readcomment2 {
+            padding-left: 32px;
+            background: none; }
+        body table#mypiWrap td#mCenter table#mypiRead td.mypiComm {
+          background: none;
+          padding: 0;
+          margin: 16px 32px;
+          border: none;
+          position: relative; }
+          body table#mypiWrap td#mCenter table#mypiRead td.mypiComm div.box_txt_area textarea {
+            border-radius: 8px;
+            border: 1px solid #ddd;
+            font: inherit !important;
+            width: 90%;
+            -webkit-transition: border-color ease-in .2s;
+            transition: border-color ease-in .2s; }
+            body table#mypiWrap td#mCenter table#mypiRead td.mypiComm div.box_txt_area textarea:focus {
+              border-color: #007AFF; }
+          body table#mypiWrap td#mCenter table#mypiRead td.mypiComm div.box_txt_area ul.btn_comm {
+            font-size: 12px;
+            color: #ddd;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -webkit-flex-direction: column;
+                -ms-flex-direction: column;
+                    flex-direction: column; }
+            body table#mypiWrap td#mCenter table#mypiRead td.mypiComm div.box_txt_area ul.btn_comm input[src*='mpx'] {
+              background-attachment: scroll;
+              background-clip: border-box;
+              background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgNTAgNTAiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUwIDUwOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQo8Y2lyY2xlIHN0eWxlPSJmaWxsOiMyNUFFODg7IiBjeD0iMjUiIGN5PSIyNSIgcj0iMjUiLz4NCjxwb2x5bGluZSBzdHlsZT0iZmlsbDpub25lO3N0cm9rZTojRkZGRkZGO3N0cm9rZS13aWR0aDoyO3N0cm9rZS1saW5lY2FwOnJvdW5kO3N0cm9rZS1saW5lam9pbjpyb3VuZDtzdHJva2UtbWl0ZXJsaW1pdDoxMDsiIHBvaW50cz0iDQoJMzgsMTUgMjIsMzMgMTIsMjUgIi8+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8L3N2Zz4NCg==) !important;
+              background-origin: padding-box;
+              background-position: 50% 50%;
+              background-repeat: no-repeat;
+              background-size: auto;
+              box-sizing: border-box;
+              color: white;
+              cursor: pointer;
+              display: block;
+              height: 50px;
+              overflow-x: hidden;
+              overflow-y: hidden;
+              padding-bottom: 0px;
+              padding-left: 50px;
+              padding-right: 0px;
+              padding-top: 1px;
+              right: 5px;
+              text-align: center;
+              text-decoration: none;
+              text-indent: -119988px;
+              vertical-align: middle;
+              width: 50px;
+              -webkit-transition: -webkit-filter ease-in .2s;
+              transition: -webkit-filter ease-in .2s;
+              transition: filter ease-in .2s;
+              transition: filter ease-in .2s, -webkit-filter ease-in .2s;
+              margin-bottom: 10px;
+              -webkit-filter: grayscale(1);
+                      filter: grayscale(1); }
+              body table#mypiWrap td#mCenter table#mypiRead td.mypiComm div.box_txt_area ul.btn_comm input[src*='mpx']:hover {
+                -webkit-filter: grayscale(0);
+                        filter: grayscale(0); }
+            body table#mypiWrap td#mCenter table#mypiRead td.mypiComm div.box_txt_area ul.btn_comm input {
+              margin-left: 4px; }
+      body table#mypiWrap td#mCenter div.mypiNum div.wrap_paging {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex; }
+      body table#mypiWrap td#mCenter div.mypiNum span.paging_comm {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-align-content: center;
+            -ms-flex-line-pack: center;
+                align-content: center;
+        margin: auto;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+            -ms-flex-pack: center;
+                justify-content: center; }
+      body table#mypiWrap td#mCenter div.mypiNum em.num {
+        background: none;
+        border: none;
+        font-size: 16px;
+        font-weight: 200;
+        color: #007AFF; }
+      body table#mypiWrap td#mCenter div.mypiNum a.num {
+        font-size: 16px;
+        font-weight: 200; }
+      body table#mypiWrap td#mCenter div.mypiNum a.btn_comm {
+        background: none;
+        font-size: 16px;
+        font-weight: 200;
+        width: auto;
+        height: auto;
+        float: none; }
+  body div.footer_ruliweb {
+    width: 76.8vw;
+    background: #fff;
+    padding: 0;
+    margin: 0;
+    border: 0 !important;
+    display: none; }
+    body div.footer_ruliweb a, body div.footer_ruliweb p {
+      display: none; }
+    body div.footer_ruliweb:before {
+      content: "Designed by Estoque";
+      color: #000;
+      font-weight: 100;
+      font-size: 12px;
+      padding: 32px 0;
+      display: block; }
